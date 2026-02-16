@@ -1,4 +1,4 @@
-package com.axesoft.viewmodelexcerciseapp.ui.navgraph
+package com.axesoft.viewmodelexcerciseapp.ui.core.composable
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.axesoft.viewmodelexcerciseapp.ui.navgraph.NavGraph
 import com.axesoft.viewmodelexcerciseapp.ui.screens.MainScreen
 import com.axesoft.viewmodelexcerciseapp.ui.screens.NextPageScreen
 

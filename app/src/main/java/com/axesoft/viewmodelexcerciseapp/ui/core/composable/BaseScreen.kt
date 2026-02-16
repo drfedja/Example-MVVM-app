@@ -9,7 +9,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.NavController
 import com.axesoft.viewmodelexcerciseapp.ui.core.BaseViewModel
-import com.axesoft.viewmodelexcerciseapp.ui.navgraph.LocalNavController
 import kotlinx.coroutines.flow.filter
 
 @SuppressLint("RestrictedApi")

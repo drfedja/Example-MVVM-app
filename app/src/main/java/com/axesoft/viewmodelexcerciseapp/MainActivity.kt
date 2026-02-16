@@ -6,7 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.MaterialTheme
 import com.axesoft.viewmodelexcerciseapp.ui.core.composable.AppWrapper
-import com.axesoft.viewmodelexcerciseapp.ui.navgraph.NavHost
+import com.axesoft.viewmodelexcerciseapp.ui.core.composable.NavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
