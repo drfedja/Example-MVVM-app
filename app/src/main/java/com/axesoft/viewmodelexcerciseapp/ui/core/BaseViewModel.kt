@@ -2,9 +2,9 @@ package com.axesoft.viewmodelexcerciseapp.ui.core
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.axesoft.viewmodelexcerciseapp.ui.core.ScreenResult
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.update
 
 abstract class BaseViewModel<State: Any> : ViewModel() {
 
@@ -16,6 +16,12 @@ abstract class BaseViewModel<State: Any> : ViewModel() {
 
     protected val _state by lazy { MutableStateFlow(getInitialState()) }
     val state: StateFlow<State> by lazy { _state}
+
+    protected fun updateState(action: (State) -> State) {
+        _state.update {
+            action(it)
+        }
+    }
 
     protected abstract fun getInitialState(): State
 
